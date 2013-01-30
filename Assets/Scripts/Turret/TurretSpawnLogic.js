@@ -275,6 +275,6 @@ function CheckTurrets()
 		}
 	} 
 
-	Debug.Log("Check Status!!!");
+	//Debug.Log("Check Status!!!");
 }
 

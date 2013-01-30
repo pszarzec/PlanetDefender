@@ -48,7 +48,7 @@ function Update ()
 			var actualTurretObj :TurretDragandDrop = 
 				GameObject.Find(actualTurret.objName).GetComponent(TurretDragandDrop);
 			
-			if(Input.GetKeyUp(KeyCode.Joystick1Button2) || Input.GetKeyUp(KeyCode.LeftControl))
+			if(Input.GetKeyUp(KeyCode.Joystick1Button2) || Input.GetKeyUp(KeyCode.Space))
 			{
 				actualTurretObj.Shoot();
 			}
@@ -88,7 +88,7 @@ function Update ()
 			var actualTurretObjTwo :TurretDragandDrop = 
 				GameObject.Find(actualTurretTwo.objName).GetComponent(TurretDragandDrop);
 			
-			if(Input.GetKeyUp(KeyCode.Joystick2Button2) || Input.GetKeyUp(KeyCode.LeftControl))
+			if(Input.GetKeyUp(KeyCode.Joystick2Button2) || Input.GetKeyUp(KeyCode.Space))
 			{
 				actualTurretObjTwo.Shoot();
 			}

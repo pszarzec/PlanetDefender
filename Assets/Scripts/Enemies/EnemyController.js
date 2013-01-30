@@ -23,7 +23,7 @@ function Update () {
 
 function ApplyDamage(damage : float)
 {
-	Debug.Log("" + GetComponent(EnemyProperties).Health);
+	//Debug.Log("" + GetComponent(EnemyProperties).Health);
 	GetComponent(EnemyProperties).Health -= damage;
 	
 	if(GetComponent(EnemyProperties).Health < 0)

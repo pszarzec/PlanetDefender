@@ -29,6 +29,6 @@ function OnTriggerEnter (other : Collider) {
     }else if(other.tag == "GoldEnemyTag" || other.tag == "GiftsTag")
 	{
     	Destroy(other.gameObject);
-    	Debug.Log("Uusunolem");
+    	//Debug.Log("Uusunolem");
     }
 }
