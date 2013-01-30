@@ -4,7 +4,7 @@ public var ParticleExplo : GameObject;
 public var ParticleFire : GameObject;
 private var PlayerInfoScr : PlayerInfo;
 public var sound : AudioClip;
-public var PlanetDamageOnEnemyCrash : float;
+public var PlanetDamageOnEnemyCrash : float = 100;
 
 function Start () {
 	PlayerInfoScr = GameObject.Find("PlayerObject").GetComponent(PlayerInfo);
