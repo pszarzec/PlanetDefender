@@ -96,6 +96,7 @@ function EnterLostGameState(){
 	removeAllTurrets();
 	
 	GlobalScr.ResetPlanet();
+	GlobalScr.ResetPlanetOrientation();
 	GlobalScr.GameState  = GameState.GamePrepare;
 	TurretSpawner.SendMessage("SpawnTurret",0);
 }
@@ -106,6 +107,7 @@ function EnterWinGameState(){
 	TurretSpawner.active = true;
 	MainGUI.active = true;
 	//removeAllTurrets();	
+	GlobalScr.ResetPlanetOrientation();
 	
 	var AllTurets : GameObject[] = GameObject.FindGameObjectsWithTag("TurretTag");
 	var	turretSelectorSrc :TurretSelector = GameObject.Find("TurretSelector").GetComponent(TurretSelector);
