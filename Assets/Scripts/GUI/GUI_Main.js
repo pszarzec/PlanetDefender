@@ -29,8 +29,7 @@ function OnGUI()
 //	selGridInt = GUI.SelectionGrid(Rect(Screen.width - (Screen.width / 4), 
 //		Screen.height - ((Screen.height * 85) / 100), 100, 40), selGridInt, selStrings, 1);
 		
-	selPlayerInt = GUI.SelectionGrid(Rect(Screen.width - (Screen.width / 4), 
-		Screen.height - ((Screen.height * 85) / 100)+80, 100, 100), selPlayerInt, playerText, 1);
+	selPlayerInt = GUI.SelectionGrid(Rect(Screen.width - 200, 200, 100, 150), selPlayerInt, playerText, 1);
 		
 	selectedTurret = GUI.SelectionGrid(Rect(100, 200, 100, 225), selectedTurret, TurretNames, 1);
 		

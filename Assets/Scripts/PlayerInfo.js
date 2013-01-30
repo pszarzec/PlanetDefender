@@ -88,7 +88,7 @@ function Update() {
 	
 	
 	PlayerMoneyLabel.text = "Money: " + PlayerMoney;
-	PlayerPointsLabel.text = "Points: " + PlayerPoints;
+	PlayerPointsLabel.text = "Points: " + PlayerPoints + "/" + NextRequiredPoints;
 	PlanetLifeLabel.text = "Planet life: " + PlanetLife + "/100";
 	 
 	if((GlobalScr.GameState != GameState.GameLose) && (GlobalScr.GameState != GameState.GameWon)){
