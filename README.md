@@ -7,13 +7,13 @@ Know Bugs
 ==============
 
 - There are some problems with keyboard on windows 
-- Turret selection is broken after passing 1st level (wrong selection)
+- (FIXED) Turret selection is broken after passing 1st level (wrong selection)
+- (FIXED) God mode on first level.
 
 TODO:
 ==============
 
 - Balance Game
-- Fix bugs
 - Adding support up to 4player
 - Android? 
 - iOS? 
