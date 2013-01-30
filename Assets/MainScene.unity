@@ -390,7 +390,7 @@ GameObject:
   - 4: {fileID: 583758266}
   - 131: {fileID: 583758265}
   m_Layer: 0
-  m_Name: 3
+  m_Name: IconTurret3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1092,7 +1092,7 @@ GameObject:
   - 4: {fileID: 1529415037}
   - 131: {fileID: 1529415036}
   m_Layer: 0
-  m_Name: 1
+  m_Name: IconTurret1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1294,7 +1294,7 @@ GameObject:
   - 4: {fileID: 1761195465}
   - 131: {fileID: 1761195464}
   m_Layer: 0
-  m_Name: 2
+  m_Name: IconTurret2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
