@@ -17,10 +17,16 @@ function ResetPlanetProperties()
 {
 	GetComponent(PlanetProperties).PlanetHP = GetComponent(PlanetProperties).MaxPlanetHP;
 	
+	ResetPlanetOrientation();
+	
 	// to apply properties to states
 	EstimatePlanetMove();
 }
 
+function ResetPlanetOrientation()
+{
+	transform.rotation = Quaternion.identity;
+}
 
 function Update () {
 	EstimatePlanetMove();

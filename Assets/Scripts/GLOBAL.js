@@ -37,6 +37,12 @@ function ResetPlanet()
 	GameObject.Find("Planet").GetComponent(PlanetStateControler).ResetPlanetProperties();
 }
 
+
+function ResetPlanetOrientation()
+{
+	GameObject.Find("Planet").GetComponent(PlanetStateControler).ResetPlanetOrientation();
+}
+
 function Update () 
 {
 	if(GameState == GameState.GameStart)
