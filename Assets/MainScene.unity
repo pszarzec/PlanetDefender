@@ -168,9 +168,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2a9eff2a62bb74aa4746dbab5ecee9, type: 3}
   m_Name: 
   ParticleExplo: {fileID: 100000, guid: d156462846dc44f479ad1abd13bb4b2e, type: 2}
-  ParticleFire: {fileID: 100000, guid: 89936f3e5a08c44e3adf1725684cc37a, type: 2}
+  ParticleFire: {fileID: 100000, guid: d156462846dc44f479ad1abd13bb4b2e, type: 2}
   sound: {fileID: 8300000, guid: 51ede45ed0b29426eb75157182c36175, type: 3}
-  PlanetDamageOnEnemyCrash: 0
+  PlanetDamageOnEnemyCrash: 100
 --- !u!114 &70574989
 MonoBehaviour:
   m_ObjectHideFlags: 0
