@@ -50,14 +50,14 @@ function Update ()
     		global.GameState = GameState.GameAwaiting;
     		selStrings[0] = "Back";
     		
-    		Debug.Log("GameState set: GameStart");
+    		//Debug.Log("GameState set: GameStart");
     	}
     	else if(global.GameState == GameState.GameStart)
     	{
     		global.GameState = GameState.GamePrepare;
     		selStrings[0] = "Ready";
     		
-    		Debug.Log("GameState set: GamePrepare");
+    		//Debug.Log("GameState set: GamePrepare");
     	}
     }
     

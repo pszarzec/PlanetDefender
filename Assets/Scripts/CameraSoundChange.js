@@ -51,7 +51,7 @@ function FixedUpdate () {
 
 function ChangeToDie() {
 	if(!ready){
-		Debug.Log("CHANGE TO DIE");
+		//Debug.Log("CHANGE TO DIE");
 		ready = true;
 		updating = true;
 		toDie = true;
@@ -60,7 +60,7 @@ function ChangeToDie() {
 
 function ChangeToNormal() {
 	if(!ready){
-		Debug.Log("CHANGE TO NORMAL");
+		//Debug.Log("CHANGE TO NORMAL");
 		ready = true;
 		updating = true;
 		toDie = false;

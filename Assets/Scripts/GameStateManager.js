@@ -88,7 +88,7 @@ function removeAllTurrets()
 }
 
 function EnterLostGameState(){
-	Debug.Log("ENTER LOST GAME STATE");
+	//Debug.Log("ENTER LOST GAME STATE");
 	Player.ResetStats();
 	Player.CloseLabels();
 	TurretSpawner.active = true;
@@ -101,7 +101,7 @@ function EnterLostGameState(){
 }
 
 function EnterWinGameState(){
-	Debug.Log("ENTER WIN GAME STATE");
+	//Debug.Log("ENTER WIN GAME STATE");
 	Player.CloseLabels();
 	TurretSpawner.active = true;
 	MainGUI.active = true;
@@ -124,7 +124,7 @@ function EnterToGamePrepareState()
 {
 	GlobalScr.LockPlanetRotation(true);
 	GlobalScr.LockEnemiesSpawner(true);
-	Debug.Log("PREPARE");
+	//Debug.Log("PREPARE");
 	// Włączanie spawnera od wierzyczek.
 	TurretSpawner.active = true;
 	
@@ -172,7 +172,7 @@ function EnterToGameAwaitingState()
 	var	turretSelectorSrc :TurretSelector = GameObject.Find("TurretSelector").GetComponent(TurretSelector);
 	var config : CONFIG = GameObject.Find('CONFIG').GetComponent(CONFIG);
 	
-	Debug.Log("Szukam...");
+	//Debug.Log("EnterToGameAwaitingState...");
 	
 	var idx : int = 0; 
 	for(var obj : GameObject in AllTurets){ 
@@ -206,12 +206,12 @@ function EnterToGameAwaitingState()
 		idx++;
 	} 
 	
-	Debug.Log("Bylo" + idx);
+	//Debug.Log("DODANO" + idx);
 	
 	//yield WaitForSeconds(1.0);
 	GlobalScr.GameState = GameState.GameStart;
 	
-	
+	//DumapTab();
 	MainGUI.active = false;
 }
 
@@ -220,6 +220,7 @@ private function SortTurrets()
     var table :ArrayList = GlobalScr.TurretSelections;
     var swapped;    
 	
+	//Debug.Log("SORTING");
 	//Debug.Log("Before sort: ");	
 	//DumapTab();
 		
@@ -256,10 +257,10 @@ private function SortTurrets()
 	//DumapTab();
 }
 
-//function DumapTab()
-//{
-//	for(var t :TurretSelect in GlobalScr.TurretSelections)
-//	{
-//		Debug.Log("Name: " + t.objName + " Index: " + t.index + " Use: " + t.use);
-//	}
-//}
+function DumapTab()
+{
+	for(var t :TurretSelect in GlobalScr.TurretSelections)
+	{
+		Debug.Log("Name: " + t.objName + " Index: " + t.index + " Use: " + t.use);
+	}
+}

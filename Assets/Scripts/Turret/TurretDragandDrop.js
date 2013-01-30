@@ -37,6 +37,7 @@ function Start () {
 	
 	this.renderer.material = TexMaterial;
 }
+
 function DecreaseHP( HPDown : float)
 {
 	TurretHealth -= HPDown;
