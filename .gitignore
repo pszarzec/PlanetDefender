@@ -15,3 +15,5 @@ Library/
 *.csproj
 *.sln
 *.suo
+
+Temp/
