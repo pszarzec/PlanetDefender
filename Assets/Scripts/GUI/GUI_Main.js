@@ -1,5 +1,7 @@
 #pragma strict
 
+//public var Style : GUIStyle;
+
 var selGridInt :int = 0;
 var selStrings :String[] = ["Ready"];
 var maxButton :int = 1;
