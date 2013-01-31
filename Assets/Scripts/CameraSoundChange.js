@@ -20,7 +20,7 @@ function Update () {
 function FixedUpdate () {
 	
 
-	var approxSecondsToFade : int = 2;
+	var approxSecondsToFade : int = 1;
 
 	if(updating){
 		
